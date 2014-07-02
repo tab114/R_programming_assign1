@@ -1,5 +1,6 @@
 setwd("//SP3AKER11-PC/Users/Public/Statistics public/Coursera/R Programming/Programming Assignments/1. Air Pollution/")
 
+## Part 1
 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   
@@ -21,6 +22,8 @@ pollutantmean("specdata", "nitrate", 70:72)
 pollutantmean("specdata", "nitrate", 23)
 
 
+## Part 2
+
 complete <- function(directory, id = 1:332) {
   filepath <- dir(directory, full.names=TRUE)
   complete.data <- data.frame()    
@@ -38,6 +41,8 @@ complete("specdata", 1)
 complete("specdata", c(2, 4, 8, 10, 12))
 complete("specdata", 30:25)
 
+
+## Part 3
 
 corr <- function(directory, threshold = 0) {
   filepath <- dir(directory, full.names=TRUE)
